@@ -1,0 +1,98 @@
+body {
+	margin: 0;
+	background: url('../Image/bg.webp') no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.card {
+	display: block;
+	background: linear-gradient(to bottom, rgb(15, 15, 15,1),  rgb(5, 5, 5, 0.7)) no-repeat center center;
+	background-size: cover;
+	overflow: hidden;
+	margin: 40px auto;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 0 2px black,
+    0 0 3px black,
+    0 0 5px rgb(25,25,25,1);
+	border: 2vmin solid;
+	border-color: black;
+}
+
+
+
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.card .skypfp {
+	display: block;
+	border-radius: 100%;
+	margin: 40px auto;
+	height: 120px;
+	width: auto;
+	box-shadow: 0 0 2px black,
+    0 0 3px black,
+    0 0 3px rgb(25,25,25,1);
+    border: 2px solid white;
+
+}
+
+
+.card .SkyDisplayName {
+	display: block;
+	text-align: center;
+	margin: 20px auto;
+    color: white;
+    font-family: Verdana;
+    font-size: 50px;
+}
+
+.card .SkyBio {
+	display: block;
+	text-align: center;
+	margin: 20px auto;
+	color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+
+}
+
+#pastWork {
+	display: block;
+	text-align: center;
+	margin: 40px auto;
+	color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.card a {
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 50%;
+    transition: 1s;
+}
+
+.card a:hover {
+	transform: scale(1.1);
+	border: .1vmin solid;
+	border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+	
+	animation: 10s rotate linear infinite;
+}
