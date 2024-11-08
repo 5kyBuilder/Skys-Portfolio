@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	background: url('../image/bg.webp') no-repeat center center;
+	background: url('../Image/bg.webp') no-repeat center center;
 	background-attachment: fixed;
 	background-size: cover;
 }
@@ -52,7 +52,7 @@ body {
 	display: block;
 	text-align: center;
 	margin: 20px auto;
-    color: white;
+    color: red;
     font-family: Verdana;
     font-size: 50px;
 }
@@ -64,16 +64,24 @@ body {
 	color: white;
     font-family: sans-serif;
     font-size: 20px;
+}
 
+.card .SkyBioBig {
+	display: block;
+	text-align: center;
+	margin: 20px auto;
+	color: rgb(255, 208, 0);
+    font-family: sans-serif;
+    font-size: 20px;
 }
 
 #pastWork {
 	display: block;
 	text-align: center;
 	margin: 40px auto;
-	color: white;
+	color: lightgreen;
     font-family: sans-serif;
-    font-size: 14px;
+    font-size: 30px;
 }
 
 .card a {
@@ -94,5 +102,5 @@ body {
 	border: .1vmin solid;
 	border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
 	
-	animation: 5s rotate linear infinite;
+	animation: 10s rotate linear infinite;
 }
