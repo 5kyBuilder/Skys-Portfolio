@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	background: url('../Image/bg.webp') no-repeat center center;
+	background: url('../image/bg.webp') no-repeat center center;
 	background-attachment: fixed;
 	background-size: cover;
 }
